@@ -8,4 +8,5 @@ let promise = new Promise((resolve, reject) => {
 
 promise
   .then(response => console.log('Then', response))
-  .catch(error => console.error('Catch', error));
+  .catch(error => console.error('Catch', error))
+  .finally(() => console.log('Completed'));
