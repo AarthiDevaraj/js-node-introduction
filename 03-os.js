@@ -1,4 +1,7 @@
-const os = require('os');
+const os = require('os'); //  CommonJS module import system
+//  os is a core node module
+//  more information here: https://nodejs.org/dist/latest-v13.x/docs/api/os.html
+//  provides metadata about the os
 
 console.log('OS', os.platform());
 console.log('Machine Architecture', os.arch());

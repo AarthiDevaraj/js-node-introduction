@@ -1,11 +1,13 @@
+//  More on Promise API here: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises
+
 let promise = new Promise((resolve, reject) => {
   let randomGenerator = () => Math.floor(Math.random() * 10);
 
   setTimeout(() => {
     if (randomGenerator() % 2 === 0) {
-      resolve("Resolved!");
+      resolve('Resolved!');
     } else {
-      reject("Rejected!");
+      reject('Rejected!');
     }
   }, 5000);
 });
@@ -18,5 +20,5 @@ promise
     console.log(error);
   })
   .finally(() => {
-    console.log("Finishing");
+    console.log('Finishing');
   });
